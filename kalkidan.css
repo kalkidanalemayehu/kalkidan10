@@ -1,0 +1,88 @@
+
+
+body{ 
+  background-color: gray;
+}
+
+h1 {
+  color: rgb(95, 95, 95);
+  text-align: center;
+  font-family: arial;
+  background-color: aliceblue;
+}
+
+
+p1{
+  font-family: arial;
+  font-size: 20px;
+  color: white
+}
+
+
+
+#showcase {
+  height: 150px;
+}
+
+#showcase h1 {
+  font-size:50px;
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
+
+@keyframes heading{
+0%   {left: 1300px}
+100% {left: 0px}
+}
+
+#content{
+  position: relative;
+  animation-name:content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content{
+0%   {left: -1000px}
+100% {left: 0px}
+}
+
+.btn{
+  display: inline-block;
+  color: white;
+  padding: 1rem 2rem;
+  border: white 1px solid;
+  margin-left: 680px;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+  transition-property: unset;
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  transform: scalex(1.2); 
+}
+
+
+@keyframes btn{
+0%   {opacity: 0}
+100% {opacity: 1}
+}
+
+.image{
+width: 600px;
+}
+
+.image2{
+width: 600px;
+}
+
+
+
